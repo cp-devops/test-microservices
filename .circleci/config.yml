@@ -10,9 +10,9 @@ jobs:
       - checkout
       - run: echo "Checkout Latest Github"
       - run: cd ~
-      - run: echo pwd
+      - run: pwd
       - run:
-          command: ./app.py test
+          command: app.py test
           name: application
 
 workflows:
