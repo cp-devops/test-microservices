@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Checkout Latest Github"
-      - run: pip install -r ~/requirements.txt 
+      - run: pip install -r requirements.txt 
       - python/load-cache
       - python/install-deps
       - python/save-cache
