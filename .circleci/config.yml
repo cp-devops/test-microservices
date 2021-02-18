@@ -15,6 +15,7 @@ jobs:
             cd project-ml-microservice-kubernetes
             pwd
             ls
+            cat /root/microservice
       # Download and cache dependencies
       - restore_cache:
           keys:
