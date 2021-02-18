@@ -10,6 +10,10 @@ jobs:
       - checkout
       - run: echo "Checkout Latest Github"
       - run: cd project-ml-microservice-kubernetes
+      - run: pip install -r requirements.txt 
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
       - run:
           command: app.py test
           name: application
