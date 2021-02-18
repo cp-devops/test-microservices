@@ -9,7 +9,8 @@ jobs:
     steps:
       - checkout
       - run: echo "Checkout Latest Github"
-
+      - run: cd ~
+      - run: echo pwd
       - run:
           command: ./app.py test
           name: application
