@@ -9,12 +9,10 @@ jobs:
     steps:
       - checkout
       - run: echo "Checkout Latest Github"
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
+
       - run:
-          command: ./manage.py test
-          name: Test
+          command: ./app.py test
+          name: application
 
 workflows:
   main:
