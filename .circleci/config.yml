@@ -9,9 +9,9 @@ jobs:
     steps:
       - checkout
       - run: echo "Checkout Latest Github"
-      - run: sudo su -
+      - run: cd project-ml-microservice-kubernetes
       - run:
-          command: project-ml-microservice-kubernetes/app.py test
+          command: app.py test
           name: application
 
 workflows:
